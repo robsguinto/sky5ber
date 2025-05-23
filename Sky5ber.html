@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SKY5BER</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #1e1e1e;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #00bcd4;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      background-color: #2e2e2e;
+      color: #ffffff;
+    }
+
+    .checkbox-group {
+      margin-top: 10px;
+    }
+
+    .checkbox-group label {
+      display: flex;
+      align-items: center;
+      font-weight: normal;
+      margin-bottom: 8px;
+    }
+
+    .checkbox-group input {
+      margin-right: 10px;
+    }
+
+    .terms {
+      margin-top: 20px;
+      background-color: #2e2e2e;
+      padding: 15px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .agreement {
+      margin-top: 15px;
+    }
+
+    .agreement label {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .agreement input {
+      margin-right: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #00bcd4;
+      color: #121212;
+      margin-top: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0097a7;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>SKY5BER</h2>
+    <form action="https://formspree.io/f/mqaqoglv" method="POST" onsubmit="return document.getElementById('agree').checked;">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="Full Name" required>
+
+      <label for="address">Address</label>
+      <input type="text" id="address" name="Address" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="Email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="Phone Number" required>
+
+      <label>Choose Internet Plans</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="Internet Plan" value="799PHP UP TO 60Mbps"> 799PHP UP TO 60Mbps</label>
+        <label><input type="checkbox" name="Internet Plan" value="899PHP UP TO 80Mbps"> 899PHP UP TO 80Mbps</label>
+        <label><input type="checkbox" name="Internet Plan" value="1099PHP UP TO 100Mbps"> 1,099PHP UP TO 100Mbps</label>
+        <label><input type="checkbox" name="Internet Plan" value="1299PHP UP TO 150Mbps"> 1,299PHP UP TO 150Mbps</label>
+        <label><input type="checkbox" name="Internet Plan" value="1599PHP UP TO 200Mbps"> 1,599PHP UP TO 200Mbps</label>
+      </div>
+
+      <div class="terms">
+        <strong>Terms and Conditions:</strong>
+        <ul>
+          <li>The modem and any other installed devices remain the property of the service provider.</li>
+          <li>You are responsible for maintaining the equipment in good condition.</li>
+          <li>A replacement fee may be charged for damaged or lost devices.</li>
+          <li>The equipment must be returned in case of service cancellation.</li>
+        </ul>
+      </div>
+
+      <div class="agreement">
+        <label><input type="checkbox" id="agree" required> I have read and agree to the Terms and Conditions</label>
+      </div>
+
+      <input type="submit" value="Submit Request">
+    </form>
+	<div class="Slogan">
+        <strong>When you care enough to send the very best</strong>
+        <ul>
+          <li>You're in good hands</li>
+          <li>Quality never goes out of style.</li>
+        </ul>
+      </div>
+  </div>
+</body>
+</html>
